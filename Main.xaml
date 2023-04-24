@@ -1,0 +1,675 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1234,982" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.UIAutomationNext.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Triggers</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="976,10325" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Use Browser Edge: Московская Биржа" sap:VirtualizedContainerService.HintSize="914,10214" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="72cdf871-760a-47b6-a61e-040706b6caf0" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="880,9996" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Name="USD_RUB" />
+              <Variable x:TypeArguments="x:String" Name="Outmsg" />
+              <Variable x:TypeArguments="sd:DataTable" Name="JPY_RUB" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Продукты и'" sap:VirtualizedContainerService.HintSize="818,158" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="72cdf871-760a-47b6-a61e-040706b6caf0" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.moex.com/" CvType="Icon" DesignTimeRectangle="1514, 179, 18, 12" DesignTimeScaleFactor="1" FriendlyName="'USE /assets/icons.svg#m…'" FullSelectorArgument="&lt;webctrl href='/assets/icons.svg#menu-line' idx='3' tag='use' /&gt;" FuzzySelectorArgument="&lt;webctrl href='/assets/icons.svg#menu-line' type='' tag='use' class='' aaname='' /&gt;" Guid="ae0681c1-eb3d-4d5e-b2c5-32f94b4e8046" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABYAAAAQCAYAAAAS7Y8mAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAzSURBVDhPY/hPIwA22MPT67+EpDRVMMgs2htMCzBqMBzQNvJGUwUIDFGDR1PF/////wMALfU+eQy4G84AAAAASUVORK5CYII=" InformativeScreenshot="e526a6270e208eb02e2537875f06e4ee.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Московская Биржа' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="330, 137, 1210, 96" FriendlyName="'Продукты и'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;header&amp;gt;div&amp;gt;div' idx='4' parentid='redesign-2021' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='header row' parentid='redesign-2021' tag='DIV' aaname='                                                                                                                                    ' check:innerText='Продукты и услуги Биржевая информация Документы Обучение Медиа О компании' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Срочный рынок'" sap:VirtualizedContainerService.HintSize="818,158" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="72cdf871-760a-47b6-a61e-040706b6caf0" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.moex.com/" CvTextArgument="Cpo4Hbln pblHOK" CvType="Text" DesignTimeRectangle="800, 239, 151, 27" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Срочный рынок'" FullSelectorArgument="&lt;webctrl aaname='Срочный рынок' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;a' parentid='moex-burger_markets' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Срочный рынок' type='' parentid='moex-burger_markets' tag='A' class='' check:innerText='Срочный рынок' /&gt;" Guid="ac92162b-52fa-413f-b27e-75d6a3221970" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJsAAAAfCAYAAADwQL9CAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUgSURBVHhe7ZnPSxtpGMf3f7HkIj1UPCh7cE+GQhGhLHuQsJd4sPSgJzEH0VxmIeAcNFSWXIJbqAoKcwhYKBEC5hCwpURpwcKWEAo5BAyUBBS+fd553zHzM+adJLN0fT/wEuaZd9555nm/7/P+yC9QKCJCiU0RGUpsishQYlNEhhKbIjKU2BSRocSmiIxAsd3Uini7/Du0qXGkxh5RGUf6aQL7/5yjdSsqPWhOkGdxWT4R10DlJV3H1vBBXCuc+Iqtnk8gbQosoPyxhU9NUfnBUkNxgWIxmUTxYwPN8hb0GF0vHaAtaiiceMTWKqwIoY0jkzLwtdkRdzpoVvaQnxWCWzxAS9x5sDTPePaf+Y1KHDubBhpWuBQenGK7LeL1JBPTBHLHDWF00TSQM+vEYbwXNoWiDxxiax++ENNkDr1mya/bfDTnDi1BivXL2AoqDT7a04/Z9SOsz9I6z6iJek5apRzyz6f5O801YRKFkkvklGnN+7a1EUe881kWdWHB5ywybpugvj1ntpPZvhIWf5sHnzYDn6to0Fjd+9okum1coHG8gZ3ZCfM69Xga+nLOs0wJ66tsTEw6VyhvJqA94d+SekI+0SznydpBbV9mobP+j83hqHwtjC6xVdf5B+/kA7JaIKLjZ+agTwkHXUWnoNqxPtSvOOr+NGK7QmGe+39vm8RdG/MBcZiigWsTXFhfpcXWpLgG9KHbJ9+2/z1Ajj1PQjM+OtXpEFtlmTeaLwhD31iZjTmUQOG0hhtm7tRQ3RabjVgCpW9mZeD9Fs8AsTjyxxdos93tbQeNU40vssemsX/Kq/4sYmu9SZq23UX+27NNwmqDFW3VQP07t7cvjbt1cXrzjBuJsL7KxeQa5SXx7j+zqNa4WG6aFygtiRloYa8767nbbpDvAUJjDFlsE3j9TphsVFM8Y+6+4SnVyqD6397p1eq01KoQVwRicxaazp+voGQFqx+x0Vp3nwWZdYTwt2+x+S1Zajno7N6Mhi/CFNZXqZh828MOqzu5hqr7eOv2HEfmIJhDwfo0e9tWRgwQGmO40yhbswmLnbYQEP8oa7ohpz/z+w7cwTndwDq7phReFiON00NsPcr9YhOFMnGRjQWfznJ30pe/4nQdxxH7eEmx+dejjp1hfnTjGdZXqZicrHGbZ2BzPMnIapstn0x/qZDYfPuVGP4GQVjsDCS2a1oDmFNrQBmC2Bwd/r07ZeivyO7TgY7napQNyL916iDzfG3EYpP1VSomYcXGCoksvyoGxDy93+fg3yG28EcflthGMI0SrXcb0H/lz3iKX2DtNoFfZwV2uF0wPcV2hspL8iuWRMkanSOeRmV9lYpJ2GmUZbNLZuhuktwbQoZTbES4Q11LbFQCNwgvcLcLltkgBNJjGh1AbGwxXFy0LSd6iW2Bf5tDALJioxK0QdAy59xIhPVVLiYDbhAYItMzURqmALt4xMao55NI95q6PH9X2cTm+9w0dg+dWcwebHfxGxVehic23zK1hg9scPQQG6+34cwCsmILivMsZTVbu2F9lY3JwEcfxN3s9GzLMZ36io1h/hG/mkCmrz/iLbHRzqjsOqil3dJb90GtoK9D3UBGJLbYBLTFLD5ZbvQUGy03DCtdCyTFltFPUHEcoPr/7RXWV2mxMQY91KUMaS4v6J62ecZnOSJQbHJ0xea3QVB4Cezo/zFKbP8RSmyhUWKTRYktNEpssiixKRQjRIlNERlKbIrIUGJTRIYSmyIylNgUEQH8AOEC8wAav3b2AAAAAElFTkSuQmCC" InformativeScreenshot="ff588fd9e3f6f30b5b3fe25aed1aec61.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Московская Биржа' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvTextArgument="DOHAoBblu pblHOK" CvType="Text" DesignTimeRectangle="800, 193, 1033, 24" ElementType="ListItem" FriendlyName="'Фондовый рынок'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li' parentid='moex-burger_markets' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='moex-burger_markets' tag='LI' class='' aaname='' check:innerText='Фондовый рынок' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Индикативные курсы'" sap:VirtualizedContainerService.HintSize="818,158" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="72cdf871-760a-47b6-a61e-040706b6caf0" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.moex.com/ru/derivatives/" CvElementArea="334, 895, 221, 43" CvTextArea="343, 908, 169, 16" CvTextArgument="+ VHpnKaTMBHble KypCbl" CvType="Button" DesignTimeRectangle="370, 908, 142, 17" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Индикативные курсы'" FullSelectorArgument="&lt;webctrl aaname='Индикативные курсы' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Индикативные курсы' tag='SPAN' type='' class='' check:innerText='Индикативные курсы' /&gt;" Guid="160fc4a1-ed5f-41af-8ee1-b2b546ced75d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJIAAAAVCAYAAACtzrfuAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUoSURBVGhD7Vg9S2NZGN6fEckPCEFQq8AtAhYBLS5uE7SQ2SJMs4rNYKGkUBRWtBAdEDOFjs0MA4MEBFOIFsvaDFoIGRjIFEMaIcIUF6YIWDz7nI/7dXJN1L2zMHAeuJhzz8f79Zz3fa+/wcIiBVgiWaQCSySLVGCJZJEKQiI1qsgMTWP/ix77+HsNxaEsMuUaWvqVhYWJ/kS6b2KnnEVuOG+JZNEXfYnUPnqJXLGK/a1pSySLvniYSN/rmGMmmvvoobUXJVIDyyx1yw05UJB7qzjVQ39NxniCPV9qKMdI28I+M19U/ukSx0v+hi6ar6dJ6nm8+9rlsInDhSkUhsWeMZQWarj6LtYly/V1j58JeNS7IOb1O2lndN+wg/JfF/Dk7GC7zfMD9Njr4WpvHqVRISeqvwlDJu3emcmjuPAeLfHbzaK4fqknFZrbU9petffVAf/OOMjxd64wjeWTtl4pENUjj4I7j/1PytpenUMk2fkgkf5ZH0duRgXguUQK1xhjQ0nv4zxyjsOgJhOpSfk5kuj4mxxSN4f67OLqBwf3dzhepKMW6jrgCknGxt7dX2PDpUwnfKeIFNrRvVxDSegk5Q62+7FEknKY6Y9veSmo/+kSfV15i2iIFSIy2WbsSxLV0b5Xs+2DFyQ7/eIbfn+BVdozeyBOUnszw9PYuaYconNSZb87hY1rOYzrIS7rNsfOGs7F+akQ6XoTrinwZxHJ45wzjtWj3ZjivrKSRA4zkSZRDD/u0Lnl82GRDqviXL8WGEQkYZMI3qHxLkakM2asIFCD7Zbni+DpZ2RS3/BYUC4jwdagv0tDL3F4q8cBtMwTRaICM5FPIglPVI0synsqMrhY42WM6+u+bsopBQ/HC1kUZBZTeoiKE8Br4bx+gZZ4JXWO2COyc7Uh5T+SSG0cVsj8qp/Sk4kUdZh6nkekq60plU2MGyCVLY6jODqGkaFx7g0N9j7VMFfiBwCNK01OoFQcM+QPIJIs2+qiRNcpIglb/GcCcx90kB5hd0wmM835CsuMu4tmzLaHzgltD6HWFumHEfpBZI9TowSerzA7yywiSJKPZGYzBgqhjsnzAYx4dL++RUW0OnUv0bc9RNrYYpkRtzCi8PMyUh7LZ3po7vGVbPAvU69UNpFIPLPTlWU2dGKbtzOLEm+VStjECTPSo4lU518nuCjRdWZGQuc9KiTxhmxDBtvdI9Ofj9mmMsGrE7liAJTMIs/sdLmvqH6HV4q42WX1YIDf1Kirg9UL/V7v/W8ZKYwHvSP7WJH9knxrEImMJuvKb/xbqPBkIn2rYVYoEZSjJCJNwHXzcLd0/Uwikq+s7Gd8J94xY4ZE6t42sPo7s9NjieROwY1clOi6ZCL5F+KJRNK9T+YP9j6GbVJOtDcRHxJ+bxKDIVO2HPHsrMgh7Kfs2Blqb9gjddGpix6pjx59eqQuCVtmBRBETfKtQSQucDdxZRj0FCKpYPCchx6hgFSSvx3u8X3Sj0gCn0UP5fAmc8Pnt5ibFOWMfcMMzzh4Qkai3KCnIKLrenR/zldbZP/I5KL6QDBsE8GPfS3NLOLdTZBfI+iVKUiXcRbjJU72Rsw+29Hso/ZWVjYxK0s/9Sm+wMbZnZ4XGPTVFrGHvqhsX0tfJPk2JFJKiJMujiQFLFKAaLr5cbRzo8cSCcT/iUidSO0jMvzPpE9ZNobrbIzXgyJukRLkvwFECdVjhV+cSBb/H4JSOjqB1TO/R/BhiWTxC8ISySIVWCJZpAJLJIsUAPwLwSduzzFT1lgAAAAASUVORK5CYII=" InformativeScreenshot="f543e532815c3f97485da802a1b1da5b.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Срочный рынок — Московская Биржа | Рынки' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvElementArea="334, 895, 221, 43" CvTextArea="343, 908, 169, 16" CvTextArgument="+ VHpnKaTMBHble KypCbl" CvType="Button" DesignTimeRectangle="335, 894, 217, 45" FriendlyName="'Индикативные курсы'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='5' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='dropdown__title ' tag='DIV' aaname='' check:innerText='Индикативные курсы' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NSelectItem DisplayName="Select Item 'Индикативные курсы валют'" sap:VirtualizedContainerService.HintSize="818,158" sap2010:WorkflowViewState.IdRef="NSelectItem_3" Item="1" ScopeIdentifier="72cdf871-760a-47b6-a61e-040706b6caf0" Version="V3">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="31">
+                  <x:String>1</x:String>
+                  <x:String>2</x:String>
+                  <x:String>3</x:String>
+                  <x:String>4</x:String>
+                  <x:String>5</x:String>
+                  <x:String>6</x:String>
+                  <x:String>7</x:String>
+                  <x:String>8</x:String>
+                  <x:String>9</x:String>
+                  <x:String>10</x:String>
+                  <x:String>11</x:String>
+                  <x:String>12</x:String>
+                  <x:String>13</x:String>
+                  <x:String>14</x:String>
+                  <x:String>15</x:String>
+                  <x:String>16</x:String>
+                  <x:String>17</x:String>
+                  <x:String>18</x:String>
+                  <x:String>19</x:String>
+                  <x:String>20</x:String>
+                  <x:String>21</x:String>
+                  <x:String>22</x:String>
+                  <x:String>23</x:String>
+                  <x:String>24</x:String>
+                  <x:String>25</x:String>
+                  <x:String>26</x:String>
+                  <x:String>27</x:String>
+                  <x:String>28</x:String>
+                  <x:String>29</x:String>
+                  <x:String>30</x:String>
+                  <x:String>31</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.moex.com/ru/derivatives/currency-rate.aspx?currency=USD_RUB" DesignTimeRectangle="861, 532, 35, 19" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'5'" FullSelectorArgument="&lt;webctrl parentid='currency-rate-container' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='currency-rate-container' tag='TABLE' /&gt;&lt;webctrl type='' tag='SELECT' class='' aaname='' /&gt;" Guid="89eb068e-f859-4796-871f-816e7621e6aa" ImageBase64="" InformativeScreenshot="9dcb8f39b6394f3d177b04503829a84d.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Индикативные курсы валют — Московская Биржа | Рынки' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="587, 358, 921, 18" ElementType="Text" FriendlyName="'Индикативные курсы валют'" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='' aaname='Индикативные курсы валют' check:innerText='Индикативные курсы валют' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NSelectItem DisplayName="Select Item 'Индикативные курсы валют'" sap:VirtualizedContainerService.HintSize="818,158" sap2010:WorkflowViewState.IdRef="NSelectItem_5" Item="31" ScopeIdentifier="72cdf871-760a-47b6-a61e-040706b6caf0" Version="V3">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="31">
+                  <x:String>1</x:String>
+                  <x:String>2</x:String>
+                  <x:String>3</x:String>
+                  <x:String>4</x:String>
+                  <x:String>5</x:String>
+                  <x:String>6</x:String>
+                  <x:String>7</x:String>
+                  <x:String>8</x:String>
+                  <x:String>9</x:String>
+                  <x:String>10</x:String>
+                  <x:String>11</x:String>
+                  <x:String>12</x:String>
+                  <x:String>13</x:String>
+                  <x:String>14</x:String>
+                  <x:String>15</x:String>
+                  <x:String>16</x:String>
+                  <x:String>17</x:String>
+                  <x:String>18</x:String>
+                  <x:String>19</x:String>
+                  <x:String>20</x:String>
+                  <x:String>21</x:String>
+                  <x:String>22</x:String>
+                  <x:String>23</x:String>
+                  <x:String>24</x:String>
+                  <x:String>25</x:String>
+                  <x:String>26</x:String>
+                  <x:String>27</x:String>
+                  <x:String>28</x:String>
+                  <x:String>29</x:String>
+                  <x:String>30</x:String>
+                  <x:String>31</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.moex.com/ru/derivatives/currency-rate.aspx?currency=USD_RUB" DesignTimeRectangle="1068, 532, 35, 19" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'24'" FullSelectorArgument="&lt;webctrl idx='2' parentid='currency-rate-container' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='currency-rate-container' tag='TABLE' /&gt;&lt;webctrl type='' tag='SELECT' class='' aaname='' /&gt;" Guid="e4be1f52-ca9e-4cea-a637-a15b5cc1d152" ImageBase64="" InformativeScreenshot="84c548b6151d36266ee7e6201adb6a91.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Индикативные курсы валют — Московская Биржа | Рынки' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="587, 358, 921, 18" ElementType="Text" FriendlyName="'Индикативные курсы валют'" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='' aaname='Индикативные курсы валют' check:innerText='Индикативные курсы валют' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAA50AAAAWCAYAAABDs/jMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASRSURBVHhe7dsxbuM6EMbxPdBex/dIE18hRU7gIm0ukDLVAm5yCCNN7sEVJZEczgxly4YSOvj/gMF7K0vkkPIC+qz3/gQAAAAAADZC6AQAAAAAbIbQCQAAAADYDKETAAAAALAZQicAAAAAYDOETgDoykfY7x7D391TOHzOh2bvz/H4Y9i9fs1HAAAA+kfoBICuEDoBAMDvQugEgK40QufnW9iNxwmdAADgvhA6AaArXuhMx3ToTMdfwvt8pBlajy/5ell5rBxql8eyb1tLb/vjfGiQzpuqjHl6fRLHVT1/rO6jLnlNmUuG9Dx/nCty5xMan9fraFwbOdfnax/ewj/x76f580iecxL3+SDm9X58qPqSY165zqRebyr1HYvyOFOZHtXnpdK8/ve3ud/N8WI11goA+HaETgDoin7o/gqHh/ph2gY++XDtP7RvEzrr3qbQafsdaw5AfniZ6+bQGatcl+aSwSfPf0Po9OdW+53o6+V9qAKlvL7s4bSn6Ryn0joGi0H8inVK7fsm+m58x+SPEWUeXWneS+/1/HlzvFiNtQIAvh2hEwC6Ih+6RYAbwkUd+OS58uHaCzGDORCka00gM6FDBh0bAMbrUshQb+lqaQ2qn1afK/sogcbOsy50yhI96X5Mf4O0DyIAZtX5OkxOmvci76uzVxf0VY2bP5e1MJ7i7aW9B4q3L3ptZl611oV16f22fz8AAL0gdAJAV8pD904EzqgdOr0SgWKgQ0Mz6IwP93rcMlbqQZYXOux5dT9ukIpu6GMsEYBzOPFqMXRONe6NDj2Nt3ljeeHbG1+fp+awAc/bKxVgl4JvtHadSnsv1fnePFeFTlXeGGpuQicA9IvQCQBdUQ/dIqBcHzoveAvohIX90YYdL+xVD/nVOPG6a990lrq0j6nKOetCpwgw8g2u+nxxTB3AImc93nlpPftj2i95jrdXdejMfZ0NnZetU1tad/rRobonsQ8vCMs545/NvI3vNKETAO4aoRMAuiIfus89VKdz5XlOQNEP+oNzoXMKEnasqod8jRP0cki4LXSe6yMFnkivyaxxYPrzAkzar3hMf+7sZXQawrVLXZ+DmQxRUTrv4Wn8p+zZ3as87nzM7esjHMz9vXCdireX+fpxLQvfO7lWfczMq8bx1uUdGxA6AaBfhE4A6EojjA2uCZ05ZC3UGNx0iBnZXnQPZfy5hxQIhipvKOsxJo11ruzDrTnQrAudTsVzTCgqbxhNqRA0aoYqHY7kuK29cioHuoW+qnU45a6ztvg9Gtct5h/+/C7PH3us15B/LGjuT9qD9rrkDw4RoRMA+kXoBICu2ICVfE/obI8V2R5kKJiu9QNhK0ip4yv7MJVD2I2h03zu9SPKC5yRd70I5lVA0m8BM2c+9zwb0PL4V62zaH6P5LoX5xBrkH2beb3vhV1/tW8zQicA9IvQCQC/mBe8kvSQrt8Y4We074cXxAAAuB+ETgD4xQidvfsKh+e3cGr8f4oTQicA4L4ROgEA+CniP7Vt/wBA6AQA3DdCJwAAAABgM4ROAAAAAMBmCJ0AAAAAgI2E8B+LjE1S4fDDqwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NSelectItem DisplayName="Select Item 'Индикативные курсы валют'" sap:VirtualizedContainerService.HintSize="818,158" sap2010:WorkflowViewState.IdRef="NSelectItem_6" Item="Марта" ScopeIdentifier="72cdf871-760a-47b6-a61e-040706b6caf0" Version="V3">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="12">
+                  <x:String>Января</x:String>
+                  <x:String>Февраля</x:String>
+                  <x:String>Марта</x:String>
+                  <x:String>Апреля</x:String>
+                  <x:String>Мая</x:String>
+                  <x:String>Июня</x:String>
+                  <x:String>Июля</x:String>
+                  <x:String>Августа</x:String>
+                  <x:String>Сентября</x:String>
+                  <x:String>Октября</x:String>
+                  <x:String>Ноября</x:String>
+                  <x:String>Декабря</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.moex.com/ru/derivatives/currency-rate.aspx?currency=USD_RUB" DesignTimeRectangle="1109, 532, 73, 19" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'Апреля'" FullSelectorArgument="&lt;webctrl idx='2' parentid='currency-rate-container' tag='TABLE' /&gt;&lt;webctrl name='d2month' tableRow='1' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='currency-rate-container' tag='TABLE' /&gt;&lt;webctrl name='d2month' type='' tag='SELECT' class='' aaname='' /&gt;" Guid="b362ac29-8c6a-4bcb-a456-aa33ff202f5b" ImageBase64="" InformativeScreenshot="7c306ef622e76a0ce65c28402e535714.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Индикативные курсы валют — Московская Биржа | Рынки' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="587, 358, 921, 18" ElementType="Text" FriendlyName="'Индикативные курсы валют'" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='' aaname='Индикативные курсы валют' check:innerText='Индикативные курсы валют' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Показать'" sap:VirtualizedContainerService.HintSize="818,158" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="72cdf871-760a-47b6-a61e-040706b6caf0" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.moex.com/ru/derivatives/currency-rate.aspx?currency=USD_RUB" CvElementArea="1264, 487, 69, 22" CvTextArea="1269, 490, 57, 12" CvTextArgument="Noka3aTb" CvType="Button" DesignTimeRectangle="1265, 488, 67, 20" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Показать'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='button80 buttonFF' aaname='Показать' check:text='Показать' /&gt;" Guid="b27f7e8e-9431-46b1-9f00-8a68ebcb9acd" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEcAAAAYCAYAAACoaOA9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFySURBVFhH7ZQ9jsJADIX33txizwA3oKOgoqGgoEJINEhRlC438Mbj+XljHAISAhb8pCcNjj3j+XDyQ65ROZwrynBmvwv3YJTDUUY5HGWUw1FGTcNZHqjpe+oNN/u1XfOPjboZTgXCin2IUQ+DM993MFVnWqXczTnEjptS15924dnqVKawqkl5V+Pp/B0dIZbNZ1i9Txj1EDgCpqPtkp+vadsOzbUHmnMuwGEYeR+Op5x06QAtXjas416wDpCHGgGbzmRjXYy9Ho6CwcZpyWtpPl0uuZoevFjw+IWl5u3hGE0ZcPTl82sYYsYeKZahx98RSD2t8NyAk8+P1n8QGvX0ybFrLDhsyMM9h2f3wCm9G70qo576zZE8+cDK6yTraoos8JxXxespkr7eFA47X5CNh+M/jnVxLTUdNdB0tRcAwO9T00pOeUXG4ZS9xKXm0qhpOF9mlMNRRjkcZZTDUUY5HGWUw1FGORxlVIbjupTDGRXRH7PCx4KtHzMDAAAAAElFTkSuQmCC" InformativeScreenshot="74278fd81b7e1522c5839015b4db39ae.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Индикативные курсы валют — Московская Биржа | Рынки' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvTextArgument="NHAnKaTHBHble KypCbl BaJKOT" CvType="Text" DesignTimeRectangle="587, 315, 921, 18" ElementType="Text" FriendlyName="'Индикативные курсы валют'" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='' aaname='Индикативные курсы валют' check:innerText='Индикативные курсы валют' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAA50AAAAWCAYAAABDs/jMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASRSURBVHhe7dsxbuM6EMbxPdBex/dIE18hRU7gIm0ukDLVAm5yCCNN7sEVJZEczgxly4YSOvj/gMF7K0vkkPIC+qz3/gQAAAAAADZC6AQAAAAAbIbQCQAAAADYDKETAAAAALAZQicAAAAAYDOETgDoykfY7x7D391TOHzOh2bvz/H4Y9i9fs1HAAAA+kfoBICuEDoBAMDvQugEgK40QufnW9iNxwmdAADgvhA6AaArXuhMx3ToTMdfwvt8pBlajy/5ell5rBxql8eyb1tLb/vjfGiQzpuqjHl6fRLHVT1/rO6jLnlNmUuG9Dx/nCty5xMan9fraFwbOdfnax/ewj/x76f580iecxL3+SDm9X58qPqSY165zqRebyr1HYvyOFOZHtXnpdK8/ve3ud/N8WI11goA+HaETgDoin7o/gqHh/ph2gY++XDtP7RvEzrr3qbQafsdaw5AfniZ6+bQGatcl+aSwSfPf0Po9OdW+53o6+V9qAKlvL7s4bSn6Ryn0joGi0H8inVK7fsm+m58x+SPEWUeXWneS+/1/HlzvFiNtQIAvh2hEwC6Ih+6RYAbwkUd+OS58uHaCzGDORCka00gM6FDBh0bAMbrUshQb+lqaQ2qn1afK/sogcbOsy50yhI96X5Mf4O0DyIAZtX5OkxOmvci76uzVxf0VY2bP5e1MJ7i7aW9B4q3L3ptZl611oV16f22fz8AAL0gdAJAV8pD904EzqgdOr0SgWKgQ0Mz6IwP93rcMlbqQZYXOux5dT9ukIpu6GMsEYBzOPFqMXRONe6NDj2Nt3ljeeHbG1+fp+awAc/bKxVgl4JvtHadSnsv1fnePFeFTlXeGGpuQicA9IvQCQBdUQ/dIqBcHzoveAvohIX90YYdL+xVD/nVOPG6a990lrq0j6nKOetCpwgw8g2u+nxxTB3AImc93nlpPftj2i95jrdXdejMfZ0NnZetU1tad/rRobonsQ8vCMs545/NvI3vNKETAO4aoRMAuiIfus89VKdz5XlOQNEP+oNzoXMKEnasqod8jRP0cki4LXSe6yMFnkivyaxxYPrzAkzar3hMf+7sZXQawrVLXZ+DmQxRUTrv4Wn8p+zZ3as87nzM7esjHMz9vXCdireX+fpxLQvfO7lWfczMq8bx1uUdGxA6AaBfhE4A6EojjA2uCZ05ZC3UGNx0iBnZXnQPZfy5hxQIhipvKOsxJo11ruzDrTnQrAudTsVzTCgqbxhNqRA0aoYqHY7kuK29cioHuoW+qnU45a6ztvg9Gtct5h/+/C7PH3us15B/LGjuT9qD9rrkDw4RoRMA+kXoBICu2ICVfE/obI8V2R5kKJiu9QNhK0ip4yv7MJVD2I2h03zu9SPKC5yRd70I5lVA0m8BM2c+9zwb0PL4V62zaH6P5LoX5xBrkH2beb3vhV1/tW8zQicA9IvQCQC/mBe8kvSQrt8Y4We074cXxAAAuB+ETgD4xQidvfsKh+e3cGr8f4oTQicA4L4ROgEA+CniP7Vt/wBA6AQA3DdCJwAAAABgM4ROAAAAAMBmCJ0AAAAAgI2E8B+LjE1S4fDDqwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[USD_RUB]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Дата' ReferenceName='Дата' ReferenceIdx='0'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' IsDeleted='true' Name='Курс промежуточного клиринга Значение' ReferenceName='Курс промежуточного клиринга Значение' ReferenceIdx='1'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' IsDeleted='true' Name='Курс промежуточного клиринга Время' ReferenceName='Курс промежуточного клиринга Время' ReferenceIdx='2'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Курс основного клиринга Значение' ReferenceName='Курс основного клиринга Значение' ReferenceIdx='3'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='NumberColumnFormat' DecimalSeparator=',' ThousandsSeparator='.' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Курс основного клиринга Время' ReferenceName='Курс основного клиринга Время' ReferenceIdx='4'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Дата' attr='fulltext' /&gt;&lt;column name='Курс промежуточного клиринга Значение' attr='fulltext' /&gt;&lt;column name='Курс промежуточного клиринга Время' attr='fulltext' /&gt;&lt;column name='Курс основного клиринга Значение' attr='fulltext' /&gt;&lt;column name='Курс основного клиринга Время' attr='fulltext' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="818,158" sap2010:WorkflowViewState.IdRef="NExtractData_3" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="72cdf871-760a-47b6-a61e-040706b6caf0" Version="V3">
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="830, 581, 437, 552" DesignTimeScaleFactor="1" FriendlyName="'Дата Курс'" FullSelectorArgument="&lt;webctrl class='tablels' parentid='currency-rate-container' tag='TABLE' /&gt;" Guid="b86105f6-de72-4496-a5c3-cd06b35c3a97" InformativeScreenshot="6ac223dfe06ab301e16717d371ee8694.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Индикативные курсы валют — Московская Биржа | Рынки' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="818,2573" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+              <ueab:ExcelProcessScopeX.Body>
+                <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="688,2486" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="626,2375" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" WorkbookPath="format">
+                      <ueab:ExcelApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Format" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,2102" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="530,1991" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="excel">
+                              <ueab:ExcelApplicationCard.Body>
+                                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                                  </ActivityAction.Argument>
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,1718" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ueab:ClearRangeX DisplayName="Clear Sheet/Range/Table" HasHeaders="False" sap:VirtualizedContainerService.HintSize="434,117" sap2010:WorkflowViewState.IdRef="ClearRangeX_2" TargetRange="[Excel.Sheet(&quot;Sheet1&quot;)]" />
+                                    <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;Sheet1&quot;)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="434,161" sap2010:WorkflowViewState.IdRef="WriteRangeX_3" IgnoreEmptySource="False" Source="[USD_RUB]" />
+                                    <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;A2:A23&quot;)]" DisplayName="Copy/Paste Range" ExcludeHeaders="True" sap:VirtualizedContainerService.HintSize="434,243" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_1" PasteOptions="Formats" SourceRange="[Format.Sheet(&quot;Sheet1&quot;).Range(&quot;A2:A23&quot;)]" Transpose="False" />
+                                    <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;B2:B23&quot;)]" DisplayName="Copy/Paste Range" ExcludeHeaders="True" sap:VirtualizedContainerService.HintSize="434,243" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_2" PasteOptions="Formats" SourceRange="[Format.Sheet(&quot;Sheet1&quot;).Range(&quot;B2:B23&quot;)]" Transpose="False" />
+                                    <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;C2:C23&quot;)]" DisplayName="Copy/Paste Range" ExcludeHeaders="True" sap:VirtualizedContainerService.HintSize="434,243" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_3" PasteOptions="Formats" SourceRange="[Format.Sheet(&quot;Sheet1&quot;).Range(&quot;C2:C23&quot;)]" Transpose="False" />
+                                    <ueab:ClearRangeX DisplayName="Clear Sheet/Range/Table" HasHeaders="False" sap:VirtualizedContainerService.HintSize="434,117" sap2010:WorkflowViewState.IdRef="ClearRangeX_3" TargetRange="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;A1:C1&quot;)]" />
+                                    <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;A1:C1&quot;)]" DisplayName="Copy/Paste Range" ExcludeHeaderFromSourceTable="False" sap:VirtualizedContainerService.HintSize="434,243" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_5" PasteOptions="Values" SourceRange="[Format.Sheet(&quot;Sheet1&quot;).Range(&quot;A1:C1&quot;)]" Transpose="False" />
+                                  </Sequence>
+                                </ActivityAction>
+                              </ueab:ExcelApplicationCard.Body>
+                            </ueab:ExcelApplicationCard>
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelApplicationCard.Body>
+                    </ueab:ExcelApplicationCard>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelProcessScopeX.Body>
+            </ueab:ExcelProcessScopeX>
+            <uix:NSelectItem DisplayName="Select Item 'Выберите валюты'" sap:VirtualizedContainerService.HintSize="818,158" sap2010:WorkflowViewState.IdRef="NSelectItem_10" Item="JPY/RUB - Японская йена к российскому рублю" ScopeIdentifier="72cdf871-760a-47b6-a61e-040706b6caf0" Version="V3">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="19">
+                  <x:String>USD/RUB - Доллар США к российскому рублю</x:String>
+                  <x:String>EUR/RUB - Евро к российскому рублю</x:String>
+                  <x:String>CAD/RUB - Канадский доллар к российскому рублю</x:String>
+                  <x:String>CHF/RUB - Швейцарский франк к российскому рублю</x:String>
+                  <x:String>GBP/RUB - Британский фунт к российскому рублю</x:String>
+                  <x:String>JPY/RUB - Японская йена к российскому рублю</x:String>
+                  <x:String>CNY/RUB - Китайский юань к российскому рублю</x:String>
+                  <x:String>TRY/RUB - Турецкая лира к российскому рублю</x:String>
+                  <x:String>UAH/RUB - Украинская гривна к российскому рублю</x:String>
+                  <x:String>INR/RUB – Индийская рупия к российскому рублю</x:String>
+                  <x:String>HKD/RUB - Гонконгский доллар к российскому рублю</x:String>
+                  <x:String>USD/CAD - Доллар США к канадскому доллару</x:String>
+                  <x:String>USD/CHF - Доллар США к швейцарскому франку</x:String>
+                  <x:String>USD/JPY - Доллар США к японской йене</x:String>
+                  <x:String>USD/CNY - Доллар США к китайскому юаню</x:String>
+                  <x:String>USD/TRY - Доллар США к турецкой лире</x:String>
+                  <x:String>USD/UAH - Доллар США к украинской гривне</x:String>
+                  <x:String>USD/INR - Доллар США к индийской рупии</x:String>
+                  <x:String>USD/HKD - Доллар США к гонконгскому доллару</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.moex.com/ru/derivatives/currency-rate.aspx?currency=USD_RUB" DesignTimeRectangle="917, 416, 378, 19" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'USD/RUB -'" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' class='' aaname='' /&gt;" Guid="f8f86a6b-0772-421f-9993-50e2209dfffe" InformativeScreenshot="d4243a38e70aab9bd75d6d74ab37973d.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Индикативные курсы валют — Московская Биржа | Рынки' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="776, 416, 136, 15" ElementType="Text" FriendlyName="'Выберите валюты'" FullSelectorArgument="&lt;webctrl aaname='Выберите валюты:' parentid='currency-rate-container' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Выберите валюты:' parentid='currency-rate-container' tag='DIV' type='' class='col-md-7 margin-b-10' check:innerText='Выберите валюты:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIwAAAATCAYAAABC8OWoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIZSURBVGhD7ZcNjsIgEIX3Tj2NPUp7FNOTGG/S9Cosw095M4AUzVrdzJcQpfzOmyfFH6MoHahhlC7UMEoXahili6Zh7tNghiGW2dzD82e5T6NZ1lBRvo5DhhmvW6yZ2RpnvoXqITazXJLp0lzKN9JpmLzeYruOapJ/xEsnTM0MNCb2ca+g65xea5fFnjmBdTFjfM7a+Kkkx8nXWlyPPtkYW9w+qusgPrZsrIXixOcYs2wbJv/SZtrcIH4qYf3aftu6+r2W+vw1nXeYJCLRDiwkPohIOIFDPfXz8HFlU/jvqS0mrDyPp1X3UBLSHQ1j21aIkZIv4tnngrY0XsbiNXm0H1wbKe/7vTz1SkJR0EzxUpwCyxPvfu3uFxbMxMbb4ubOx6GIu2FCgqSQvP5oHUSeMHmS9zZ22sFawjBpLv5nQRpC7r+t63l0G8Yf7z6AWuApsJZhRNvOAcPQaw6OdhSS1x+tg+QnTNG8ZIqDhvH75fMSNd0ibV3Po98wIBgPjITNA5PBUz2Kms9tTwv3RSaZRE91GldNmqVUL6+DiMTuxhbPmWEKZsoMk3TxyNjy/R7R9Sy67zB4vLrkYxsYgQsEfSDReZu9D4DI+3NbUKjapTeSC1tbByFjQB9b4hxZnBRDvEiHmB1Fw1hi31CYeS1yv21d/V7lPO+gaZhzoARzUyifgRpG6eJDDaN8KmoYpQs1jNKFGkbpwJhfWvEHZMXb57EAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NSelectItem DisplayName="Select Item 'Индикативные курсы валют'" sap:VirtualizedContainerService.HintSize="818,158" sap2010:WorkflowViewState.IdRef="NSelectItem_7" Item="1" ScopeIdentifier="72cdf871-760a-47b6-a61e-040706b6caf0" Version="V3">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="31">
+                  <x:String>1</x:String>
+                  <x:String>2</x:String>
+                  <x:String>3</x:String>
+                  <x:String>4</x:String>
+                  <x:String>5</x:String>
+                  <x:String>6</x:String>
+                  <x:String>7</x:String>
+                  <x:String>8</x:String>
+                  <x:String>9</x:String>
+                  <x:String>10</x:String>
+                  <x:String>11</x:String>
+                  <x:String>12</x:String>
+                  <x:String>13</x:String>
+                  <x:String>14</x:String>
+                  <x:String>15</x:String>
+                  <x:String>16</x:String>
+                  <x:String>17</x:String>
+                  <x:String>18</x:String>
+                  <x:String>19</x:String>
+                  <x:String>20</x:String>
+                  <x:String>21</x:String>
+                  <x:String>22</x:String>
+                  <x:String>23</x:String>
+                  <x:String>24</x:String>
+                  <x:String>25</x:String>
+                  <x:String>26</x:String>
+                  <x:String>27</x:String>
+                  <x:String>28</x:String>
+                  <x:String>29</x:String>
+                  <x:String>30</x:String>
+                  <x:String>31</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.moex.com/ru/derivatives/currency-rate.aspx?currency=USD_RUB" DesignTimeRectangle="861, 532, 35, 19" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'5'" FullSelectorArgument="&lt;webctrl parentid='currency-rate-container' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='currency-rate-container' tag='TABLE' /&gt;&lt;webctrl type='' tag='SELECT' class='' aaname='' /&gt;" Guid="89eb068e-f859-4796-871f-816e7621e6aa" ImageBase64="" InformativeScreenshot="9dcb8f39b6394f3d177b04503829a84d.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Индикативные курсы валют — Московская Биржа | Рынки' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="587, 358, 921, 18" ElementType="Text" FriendlyName="'Индикативные курсы валют'" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='' aaname='Индикативные курсы валют' check:innerText='Индикативные курсы валют' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NSelectItem DisplayName="Select Item 'Индикативные курсы валют'" sap:VirtualizedContainerService.HintSize="818,158" sap2010:WorkflowViewState.IdRef="NSelectItem_8" Item="31" ScopeIdentifier="72cdf871-760a-47b6-a61e-040706b6caf0" Version="V3">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="31">
+                  <x:String>1</x:String>
+                  <x:String>2</x:String>
+                  <x:String>3</x:String>
+                  <x:String>4</x:String>
+                  <x:String>5</x:String>
+                  <x:String>6</x:String>
+                  <x:String>7</x:String>
+                  <x:String>8</x:String>
+                  <x:String>9</x:String>
+                  <x:String>10</x:String>
+                  <x:String>11</x:String>
+                  <x:String>12</x:String>
+                  <x:String>13</x:String>
+                  <x:String>14</x:String>
+                  <x:String>15</x:String>
+                  <x:String>16</x:String>
+                  <x:String>17</x:String>
+                  <x:String>18</x:String>
+                  <x:String>19</x:String>
+                  <x:String>20</x:String>
+                  <x:String>21</x:String>
+                  <x:String>22</x:String>
+                  <x:String>23</x:String>
+                  <x:String>24</x:String>
+                  <x:String>25</x:String>
+                  <x:String>26</x:String>
+                  <x:String>27</x:String>
+                  <x:String>28</x:String>
+                  <x:String>29</x:String>
+                  <x:String>30</x:String>
+                  <x:String>31</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.moex.com/ru/derivatives/currency-rate.aspx?currency=USD_RUB" DesignTimeRectangle="1068, 532, 35, 19" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'24'" FullSelectorArgument="&lt;webctrl idx='2' parentid='currency-rate-container' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='currency-rate-container' tag='TABLE' /&gt;&lt;webctrl type='' tag='SELECT' class='' aaname='' /&gt;" Guid="e4be1f52-ca9e-4cea-a637-a15b5cc1d152" ImageBase64="" InformativeScreenshot="84c548b6151d36266ee7e6201adb6a91.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Индикативные курсы валют — Московская Биржа | Рынки' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="587, 358, 921, 18" ElementType="Text" FriendlyName="'Индикативные курсы валют'" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='' aaname='Индикативные курсы валют' check:innerText='Индикативные курсы валют' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAA50AAAAWCAYAAABDs/jMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASRSURBVHhe7dsxbuM6EMbxPdBex/dIE18hRU7gIm0ukDLVAm5yCCNN7sEVJZEczgxly4YSOvj/gMF7K0vkkPIC+qz3/gQAAAAAADZC6AQAAAAAbIbQCQAAAADYDKETAAAAALAZQicAAAAAYDOETgDoykfY7x7D391TOHzOh2bvz/H4Y9i9fs1HAAAA+kfoBICuEDoBAMDvQugEgK40QufnW9iNxwmdAADgvhA6AaArXuhMx3ToTMdfwvt8pBlajy/5ell5rBxql8eyb1tLb/vjfGiQzpuqjHl6fRLHVT1/rO6jLnlNmUuG9Dx/nCty5xMan9fraFwbOdfnax/ewj/x76f580iecxL3+SDm9X58qPqSY165zqRebyr1HYvyOFOZHtXnpdK8/ve3ud/N8WI11goA+HaETgDoin7o/gqHh/ph2gY++XDtP7RvEzrr3qbQafsdaw5AfniZ6+bQGatcl+aSwSfPf0Po9OdW+53o6+V9qAKlvL7s4bSn6Ryn0joGi0H8inVK7fsm+m58x+SPEWUeXWneS+/1/HlzvFiNtQIAvh2hEwC6Ih+6RYAbwkUd+OS58uHaCzGDORCka00gM6FDBh0bAMbrUshQb+lqaQ2qn1afK/sogcbOsy50yhI96X5Mf4O0DyIAZtX5OkxOmvci76uzVxf0VY2bP5e1MJ7i7aW9B4q3L3ptZl611oV16f22fz8AAL0gdAJAV8pD904EzqgdOr0SgWKgQ0Mz6IwP93rcMlbqQZYXOux5dT9ukIpu6GMsEYBzOPFqMXRONe6NDj2Nt3ljeeHbG1+fp+awAc/bKxVgl4JvtHadSnsv1fnePFeFTlXeGGpuQicA9IvQCQBdUQ/dIqBcHzoveAvohIX90YYdL+xVD/nVOPG6a990lrq0j6nKOetCpwgw8g2u+nxxTB3AImc93nlpPftj2i95jrdXdejMfZ0NnZetU1tad/rRobonsQ8vCMs545/NvI3vNKETAO4aoRMAuiIfus89VKdz5XlOQNEP+oNzoXMKEnasqod8jRP0cki4LXSe6yMFnkivyaxxYPrzAkzar3hMf+7sZXQawrVLXZ+DmQxRUTrv4Wn8p+zZ3as87nzM7esjHMz9vXCdireX+fpxLQvfO7lWfczMq8bx1uUdGxA6AaBfhE4A6EojjA2uCZ05ZC3UGNx0iBnZXnQPZfy5hxQIhipvKOsxJo11ruzDrTnQrAudTsVzTCgqbxhNqRA0aoYqHY7kuK29cioHuoW+qnU45a6ztvg9Gtct5h/+/C7PH3us15B/LGjuT9qD9rrkDw4RoRMA+kXoBICu2ICVfE/obI8V2R5kKJiu9QNhK0ip4yv7MJVD2I2h03zu9SPKC5yRd70I5lVA0m8BM2c+9zwb0PL4V62zaH6P5LoX5xBrkH2beb3vhV1/tW8zQicA9IvQCQC/mBe8kvSQrt8Y4We074cXxAAAuB+ETgD4xQidvfsKh+e3cGr8f4oTQicA4L4ROgEA+CniP7Vt/wBA6AQA3DdCJwAAAABgM4ROAAAAAMBmCJ0AAAAAgI2E8B+LjE1S4fDDqwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NSelectItem DisplayName="Select Item 'Индикативные курсы валют'" sap:VirtualizedContainerService.HintSize="818,158" sap2010:WorkflowViewState.IdRef="NSelectItem_9" Item="Марта" ScopeIdentifier="72cdf871-760a-47b6-a61e-040706b6caf0" Version="V3">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="12">
+                  <x:String>Января</x:String>
+                  <x:String>Февраля</x:String>
+                  <x:String>Марта</x:String>
+                  <x:String>Апреля</x:String>
+                  <x:String>Мая</x:String>
+                  <x:String>Июня</x:String>
+                  <x:String>Июля</x:String>
+                  <x:String>Августа</x:String>
+                  <x:String>Сентября</x:String>
+                  <x:String>Октября</x:String>
+                  <x:String>Ноября</x:String>
+                  <x:String>Декабря</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.moex.com/ru/derivatives/currency-rate.aspx?currency=USD_RUB" DesignTimeRectangle="1109, 532, 73, 19" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'Апреля'" FullSelectorArgument="&lt;webctrl idx='2' parentid='currency-rate-container' tag='TABLE' /&gt;&lt;webctrl name='d2month' tableRow='1' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='currency-rate-container' tag='TABLE' /&gt;&lt;webctrl name='d2month' type='' tag='SELECT' class='' aaname='' /&gt;" Guid="b362ac29-8c6a-4bcb-a456-aa33ff202f5b" ImageBase64="" InformativeScreenshot="7c306ef622e76a0ce65c28402e535714.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Индикативные курсы валют — Московская Биржа | Рынки' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="587, 358, 921, 18" ElementType="Text" FriendlyName="'Индикативные курсы валют'" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='' aaname='Индикативные курсы валют' check:innerText='Индикативные курсы валют' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Показать'" sap:VirtualizedContainerService.HintSize="818,158" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="72cdf871-760a-47b6-a61e-040706b6caf0" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.moex.com/ru/derivatives/currency-rate.aspx?currency=USD_RUB" CvElementArea="1264, 487, 69, 22" CvTextArea="1269, 490, 57, 12" CvTextArgument="Noka3aTb" CvType="Button" DesignTimeRectangle="1265, 488, 67, 20" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Показать'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='button80 buttonFF' aaname='Показать' check:text='Показать' /&gt;" Guid="b27f7e8e-9431-46b1-9f00-8a68ebcb9acd" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEcAAAAYCAYAAACoaOA9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFySURBVFhH7ZQ9jsJADIX33txizwA3oKOgoqGgoEJINEhRlC438Mbj+XljHAISAhb8pCcNjj3j+XDyQ65ROZwrynBmvwv3YJTDUUY5HGWUw1FGTcNZHqjpe+oNN/u1XfOPjboZTgXCin2IUQ+DM993MFVnWqXczTnEjptS15924dnqVKawqkl5V+Pp/B0dIZbNZ1i9Txj1EDgCpqPtkp+vadsOzbUHmnMuwGEYeR+Op5x06QAtXjas416wDpCHGgGbzmRjXYy9Ho6CwcZpyWtpPl0uuZoevFjw+IWl5u3hGE0ZcPTl82sYYsYeKZahx98RSD2t8NyAk8+P1n8QGvX0ybFrLDhsyMM9h2f3wCm9G70qo576zZE8+cDK6yTraoos8JxXxespkr7eFA47X5CNh+M/jnVxLTUdNdB0tRcAwO9T00pOeUXG4ZS9xKXm0qhpOF9mlMNRRjkcZZTDUUY5HGWUw1FGORxlVIbjupTDGRXRH7PCx4KtHzMDAAAAAElFTkSuQmCC" InformativeScreenshot="74278fd81b7e1522c5839015b4db39ae.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Индикативные курсы валют — Московская Биржа | Рынки' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArgument="NHAnKaTHBHble KypCbl BaJKOT" CvType="Text" DesignTimeRectangle="587, 315, 921, 18" ElementType="Text" FriendlyName="'Индикативные курсы валют'" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='' aaname='Индикативные курсы валют' check:innerText='Индикативные курсы валют' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAA50AAAAWCAYAAABDs/jMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASRSURBVHhe7dsxbuM6EMbxPdBex/dIE18hRU7gIm0ukDLVAm5yCCNN7sEVJZEczgxly4YSOvj/gMF7K0vkkPIC+qz3/gQAAAAAADZC6AQAAAAAbIbQCQAAAADYDKETAAAAALAZQicAAAAAYDOETgDoykfY7x7D391TOHzOh2bvz/H4Y9i9fs1HAAAA+kfoBICuEDoBAMDvQugEgK40QufnW9iNxwmdAADgvhA6AaArXuhMx3ToTMdfwvt8pBlajy/5ell5rBxql8eyb1tLb/vjfGiQzpuqjHl6fRLHVT1/rO6jLnlNmUuG9Dx/nCty5xMan9fraFwbOdfnax/ewj/x76f580iecxL3+SDm9X58qPqSY165zqRebyr1HYvyOFOZHtXnpdK8/ve3ud/N8WI11goA+HaETgDoin7o/gqHh/ph2gY++XDtP7RvEzrr3qbQafsdaw5AfniZ6+bQGatcl+aSwSfPf0Po9OdW+53o6+V9qAKlvL7s4bSn6Ryn0joGi0H8inVK7fsm+m58x+SPEWUeXWneS+/1/HlzvFiNtQIAvh2hEwC6Ih+6RYAbwkUd+OS58uHaCzGDORCka00gM6FDBh0bAMbrUshQb+lqaQ2qn1afK/sogcbOsy50yhI96X5Mf4O0DyIAZtX5OkxOmvci76uzVxf0VY2bP5e1MJ7i7aW9B4q3L3ptZl611oV16f22fz8AAL0gdAJAV8pD904EzqgdOr0SgWKgQ0Mz6IwP93rcMlbqQZYXOux5dT9ukIpu6GMsEYBzOPFqMXRONe6NDj2Nt3ljeeHbG1+fp+awAc/bKxVgl4JvtHadSnsv1fnePFeFTlXeGGpuQicA9IvQCQBdUQ/dIqBcHzoveAvohIX90YYdL+xVD/nVOPG6a990lrq0j6nKOetCpwgw8g2u+nxxTB3AImc93nlpPftj2i95jrdXdejMfZ0NnZetU1tad/rRobonsQ8vCMs545/NvI3vNKETAO4aoRMAuiIfus89VKdz5XlOQNEP+oNzoXMKEnasqod8jRP0cki4LXSe6yMFnkivyaxxYPrzAkzar3hMf+7sZXQawrVLXZ+DmQxRUTrv4Wn8p+zZ3as87nzM7esjHMz9vXCdireX+fpxLQvfO7lWfczMq8bx1uUdGxA6AaBfhE4A6EojjA2uCZ05ZC3UGNx0iBnZXnQPZfy5hxQIhipvKOsxJo11ruzDrTnQrAudTsVzTCgqbxhNqRA0aoYqHY7kuK29cioHuoW+qnU45a6ztvg9Gtct5h/+/C7PH3us15B/LGjuT9qD9rrkDw4RoRMA+kXoBICu2ICVfE/obI8V2R5kKJiu9QNhK0ip4yv7MJVD2I2h03zu9SPKC5yRd70I5lVA0m8BM2c+9zwb0PL4V62zaH6P5LoX5xBrkH2beb3vhV1/tW8zQicA9IvQCQC/mBe8kvSQrt8Y4We074cXxAAAuB+ETgD4xQidvfsKh+e3cGr8f4oTQicA4L4ROgEA+CniP7Vt/wBA6AQA3DdCJwAAAABgM4ROAAAAAMBmCJ0AAAAAgI2E8B+LjE1S4fDDqwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[JPY_RUB]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Дата' ReferenceName='Дата' ReferenceIdx='0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' IsDeleted='true' Name='Курс промежуточного клиринга Значение' ReferenceName='Курс промежуточного клиринга Значение' ReferenceIdx='1'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' IsDeleted='true' Name='Курс промежуточного клиринга Время' ReferenceName='Курс промежуточного клиринга Время' ReferenceIdx='2'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Курс основного клиринга Значение' ReferenceName='Курс основного клиринга Значение' ReferenceIdx='3'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='NumberColumnFormat' DecimalSeparator=',' ThousandsSeparator='.' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Курс основного клиринга Время' ReferenceName='Курс основного клиринга Время' ReferenceIdx='4'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Дата' attr='fulltext' /&gt;&lt;column name='Курс промежуточного клиринга Значение' attr='fulltext' /&gt;&lt;column name='Курс промежуточного клиринга Время' attr='fulltext' /&gt;&lt;column name='Курс основного клиринга Значение' attr='fulltext' /&gt;&lt;column name='Курс основного клиринга Время' attr='fulltext' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="818,158" sap2010:WorkflowViewState.IdRef="NExtractData_4" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="72cdf871-760a-47b6-a61e-040706b6caf0" Version="V3">
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="830, 581, 437, 552" DesignTimeScaleFactor="1" FriendlyName="'Дата Курс'" FullSelectorArgument="&lt;webctrl class='tablels' parentid='currency-rate-container' tag='TABLE' /&gt;" Guid="b86105f6-de72-4496-a5c3-cd06b35c3a97" InformativeScreenshot="6ac223dfe06ab301e16717d371ee8694.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Индикативные курсы валют — Московская Биржа | Рынки' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="818,2416" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2">
+              <ueab:ExcelProcessScopeX.Body>
+                <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="688,2329" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="626,2218" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_4" ResizeWindow="None" WorkbookPath="format">
+                      <ueab:ExcelApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Format" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,1945" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="530,1834" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_3" ResizeWindow="None" WorkbookPath="excel">
+                              <ueab:ExcelApplicationCard.Body>
+                                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                                  </ActivityAction.Argument>
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,1561" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;D1:F23&quot;)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="434,161" sap2010:WorkflowViewState.IdRef="WriteRangeX_4" IgnoreEmptySource="False" Source="[JPY_RUB]" />
+                                    <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;D2:D23&quot;)]" DisplayName="Copy/Paste Range" ExcludeHeaders="True" sap:VirtualizedContainerService.HintSize="434,243" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_6" PasteOptions="Formats" SourceRange="[Format.Sheet(&quot;Sheet1&quot;).Range(&quot;D2:D23&quot;)]" Transpose="False" />
+                                    <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;E2:E23&quot;)]" DisplayName="Copy/Paste Range" ExcludeHeaders="True" sap:VirtualizedContainerService.HintSize="434,243" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_7" PasteOptions="Formats" SourceRange="[Format.Sheet(&quot;Sheet1&quot;).Range(&quot;E2:E23&quot;)]" Transpose="False" />
+                                    <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;F2:F23&quot;)]" DisplayName="Copy/Paste Range" ExcludeHeaders="True" sap:VirtualizedContainerService.HintSize="434,243" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_8" PasteOptions="Formats" SourceRange="[Format.Sheet(&quot;Sheet1&quot;).Range(&quot;F2:F23&quot;)]" Transpose="False" />
+                                    <ueab:ClearRangeX DisplayName="Clear Sheet/Range/Table" HasHeaders="False" sap:VirtualizedContainerService.HintSize="434,117" sap2010:WorkflowViewState.IdRef="ClearRangeX_5" TargetRange="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;D1:F1&quot;)]" />
+                                    <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;D1:G1&quot;)]" DisplayName="Copy/Paste Range" ExcludeHeaderFromSourceTable="False" sap:VirtualizedContainerService.HintSize="434,243" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_9" PasteOptions="Values" SourceRange="[Format.Sheet(&quot;Sheet1&quot;).Range(&quot;D1:G1&quot;)]" Transpose="False" />
+                                  </Sequence>
+                                </ActivityAction>
+                              </ueab:ExcelApplicationCard.Body>
+                            </ueab:ExcelApplicationCard>
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelApplicationCard.Body>
+                    </ueab:ExcelApplicationCard>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelProcessScopeX.Body>
+            </ueab:ExcelProcessScopeX>
+            <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="818,2040" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_3">
+              <ueab:ExcelProcessScopeX.Body>
+                <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="784,1953" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="722,1842" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_8" ResizeWindow="None" WorkbookPath="format.xlsx">
+                      <ueab:ExcelApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Format" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="688,1569" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="626,1458" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_5" ResizeWindow="None" WorkbookPath="excel.xlsx">
+                              <ueab:ExcelApplicationCard.Body>
+                                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                                  </ActivityAction.Argument>
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,1185" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[USD_RUB]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="530,634" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                                      <ui:ForEachRow.Body>
+                                        <ActivityAction x:TypeArguments="sd:DataRow">
+                                          <ActivityAction.Argument>
+                                            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                                          </ActivityAction.Argument>
+                                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,518" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                                            <Sequence.Variables>
+                                              <Variable x:TypeArguments="x:Int32" Name="rowindex" />
+                                              <Variable x:TypeArguments="x:Int32" Name="Cellindex" />
+                                            </Sequence.Variables>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_2">
+                                              <Assign.To>
+                                                <OutArgument x:TypeArguments="x:Int32">[rowindex]</OutArgument>
+                                              </Assign.To>
+                                              <Assign.Value>
+                                                <InArgument x:TypeArguments="x:Int32">[USD_RUB.Rows.IndexOf(CurrentRow)]</InArgument>
+                                              </Assign.Value>
+                                            </Assign>
+                                            <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_3">
+                                              <Assign.To>
+                                                <OutArgument x:TypeArguments="x:Int32">[Cellindex]</OutArgument>
+                                              </Assign.To>
+                                              <Assign.Value>
+                                                <InArgument x:TypeArguments="x:Int32">[rowindex+2]</InArgument>
+                                              </Assign.Value>
+                                            </Assign>
+                                            <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Sheet1&quot;).Cell(&quot;G&quot;+Cellindex.ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,161" sap2010:WorkflowViewState.IdRef="WriteCellX_1" Value="[&quot;=B&quot;+Cellindex.ToString+&quot;/E&quot;+Cellindex.ToString]" />
+                                          </Sequence>
+                                        </ActivityAction>
+                                      </ui:ForEachRow.Body>
+                                    </ui:ForEachRow>
+                                    <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;G2:G23&quot;)]" DisplayName="Copy/Paste Range" ExcludeHeaders="True" sap:VirtualizedContainerService.HintSize="530,243" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_10" PasteOptions="Formats" SourceRange="[Format.Sheet(&quot;Sheet1&quot;).Range(&quot;G2:G23&quot;)]" Transpose="False" />
+                                    <ueab:AutoFitX Columns="True" DisplayName="Autofit Range" sap:VirtualizedContainerService.HintSize="530,117" sap2010:WorkflowViewState.IdRef="AutoFitX_1" Range="[Excel.Sheet(&quot;Sheet1&quot;)]" Rows="True" />
+                                  </Sequence>
+                                </ActivityAction>
+                              </ueab:ExcelApplicationCard.Body>
+                            </ueab:ExcelApplicationCard>
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelApplicationCard.Body>
+                    </ueab:ExcelApplicationCard>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelProcessScopeX.Body>
+            </ueab:ExcelProcessScopeX>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1096" BrowserType="Edge" IconBase64="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" InformativeScreenshot="24d04b50f072845e3582986d9cddb176.jpg" Selector="&lt;html app='msedge.exe' title='Московская Биржа' /&gt;" Title="Индикативные курсы валют — Московская Биржа | Рынки" Url="https://www.moex.com/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
